@@ -1,0 +1,48 @@
+body {
+    background-color: darkgoldenrod;
+}
+
+.container {
+    display: grid;
+    max-width: 1000px;
+    min-height: 300px;
+    position: relative;
+    margin: auto;
+    background-color: #663399;
+    grid-template-areas: "box-a box-a"
+                         "box-b box-c";
+    grid-template-columns: 50% 50%;
+    grid-template-rows: 20% 60%;
+    justify-items: center;
+}
+
+h1 {
+    font-size: 2em;
+    font-family: Haettenscheiler, sans-serif;
+    color: darkgoldenrod;
+
+}
+
+.box-a {
+    grid-area: box-a;
+    text-align:center;
+    justify-content: center;
+    grid-row: 1 / span2;
+    
+
+}
+
+.box-b {
+    grid-area: box-b;
+    justify-self: center;
+}
+
+.box-c {
+    grid-area: box-c;
+    border: solid;
+}
+
+img {
+    max-width: 8em;
+    height: auto;
+}
