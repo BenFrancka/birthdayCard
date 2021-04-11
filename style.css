@@ -1,25 +1,29 @@
 body {
-    background-color: darkgoldenrod;
+    background-image: url('https://www.pngkey.com/png/detail/16-164366_beyonce-clipart-lemonade-beyonce-iron-on-patch.png');
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
 }
 
 .container {
     display: grid;
     max-width: 1000px;
-    min-height: 300px;
+    min-height: 500px;
     position: relative;
     margin: auto;
-    background-color: #663399;
     grid-template-areas: "box-a box-a"
                          "box-b box-c";
     grid-template-columns: 50% 50%;
     grid-template-rows: 20% 60%;
-    justify-items: center;
+    justify-content: center;
+
 }
 
 h1 {
     font-size: 2em;
-    font-family: Haettenscheiler, sans-serif;
-    color: darkgoldenrod;
+    font-family: fantasy, sans-serif;
+    color: purple;
+    text-decoration: underline;
 
 }
 
@@ -28,6 +32,10 @@ h1 {
     text-align:center;
     justify-content: center;
     grid-row: 1 / span2;
+    border: solid purple 1em;
+    border-radius: 50%;
+    background-color: hsla(43, 89%, 38%, 0.5);
+
     
 
 }
@@ -39,10 +47,21 @@ h1 {
 
 .box-c {
     grid-area: box-c;
-    border: solid;
+    border: solid darkgoldenrod 1.1em;
+    border-radius: 50%;
+    background-color: hsla(300, 100%, 25%, 0.8);
+
 }
 
 img {
     max-width: 8em;
     height: auto;
+    opacity: 0.7;
+}
+
+p {
+    text-align:center;
+    font-size: 1.1em;
+    font-family:cursive;
+    color:silver;
 }
